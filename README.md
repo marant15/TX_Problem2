@@ -2,6 +2,6 @@
 - Requiere  maven and Java 1.8
 
 # Application
-- run the following commandfor testing:
-  mvn test
+- run the following command for testing:
+- mvn test
   
