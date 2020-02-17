@@ -54,4 +54,24 @@ public class VerificationFunctionTest {
 		expectedStudentFoundList.add(pam_student);
 		assertEquals(studentFoundList,expectedStudentFoundList);
 	}
+	
+	@Test
+	public void testAllOutOfClasses() {
+		List<Student> studentList = new ArrayList<Student>();
+		List<Classroom> classroomList = new ArrayList<Classroom>();
+		Student john_student = new Student("John Wilson", 34.069849, -118.443539);
+		Student jane_student = new Student("Jane Graham", 34.069901, -118.441562);
+		Student pam_student = new Student("Pam Bam", 34.071633, -118.441171);
+		classroomList.add(new Classroom("Principles of computational geo-location analysis", 34.069140, -118.442689));
+		classroomList.add(new Classroom("Sedimentary Petrology", 34.069585, -118.441878));
+		classroomList.add(new Classroom("Introductory Psychobiology", 34.069742, -118.441312));
+		classroomList.add(new Classroom("Art of Listening", 34.070223, -118.440193));
+		classroomList.add(new Classroom("Art Hitory", 34.071528, -118.441211));
+		studentList.add(john_student);
+		studentList.add(jane_student);
+		studentList.add(pam_student);
+		List<Student> studentFoundList = VerificationFunctions.studentsInClasses(studentList, classroomList);
+		List<Student> expectedStudentFoundList = new ArrayList<Student>();
+		assertEquals(studentFoundList,expectedStudentFoundList);
+	}
 }

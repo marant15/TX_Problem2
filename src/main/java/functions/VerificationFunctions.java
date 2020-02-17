@@ -14,7 +14,6 @@ public class VerificationFunctions {
 			for(Classroom classroom : classroomList) {
 				if(studentInClass(student, classroom)) {
 					studentFoundList.add(student);
-					System.out.println(classroom.getName());
 					break;
 				}
 			}
