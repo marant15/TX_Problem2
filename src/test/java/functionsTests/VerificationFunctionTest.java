@@ -56,7 +56,7 @@ public class VerificationFunctionTest {
 	}
 	
 	@Test
-	public void testAllOutOfClasses() {
+	public void testAllStudentsOutOfClasses() {
 		List<Student> studentList = new ArrayList<Student>();
 		List<Classroom> classroomList = new ArrayList<Classroom>();
 		Student john_student = new Student("John Wilson", 34.069849, -118.443539);

@@ -8,6 +8,13 @@ import models.Student;
 
 public class VerificationFunctions {
 	
+	/**
+	 * Receive the list of students and the list of classes
+	 * and retrieve the list of students in classes. 
+	 * @param studentList List of Student type objects
+	 * @param classroomList List of Class type objects
+	 * @return studentFoundList List of Student type objects
+	 */
 	public static List<Student> studentsInClasses(List<Student> studentList, List<Classroom> classroomList){
 		List<Student> studentFoundList = new ArrayList<Student>();
 		for(Student student : studentList) {
